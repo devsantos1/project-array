@@ -10,6 +10,8 @@
 
 body {
     background: #000000;
+    width: 100vw;
+    height: 100vh;
 }
 
 .conteiner-buttons {
@@ -79,4 +81,27 @@ li{
 span{
 
     color: aliceblue;
+}
+
+@media screen and (max-width:639px){
+
+    ul{
+    grid-template-columns: 250px 250px;
+    gap: 5px;
+    justify-content: space-evenly;
+    }
+
+    .conteiner-buttons{
+        justify-content: space-evenly;
+        align-items: normal;
+    }
+
+    span{
+        display: none;
+    }
+
+
+
+
+
 }
